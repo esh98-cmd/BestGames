@@ -1,64 +1,275 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
-       url('../fonts/Inter-Regular.woff') format('woff');
+  font-family: "Inter";
+  src:
+    url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-Medium.woff2') format('woff2'),
-       url('../fonts/Inter-Medium.woff') format('woff');
+  font-family: "Inter";
+  src:
+    url("../fonts/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-Bold.woff2') format('woff2'),
-       url('../fonts/Inter-Bold.woff') format('woff');
+  font-family: "Inter";
+  src:
+    url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-Italic.woff2') format('woff2'),
-       url('../fonts/Inter-Italic.woff') format('woff');
+  font-family: "Inter";
+  src:
+    url("../fonts/Inter-Italic.woff2") format("woff2"),
+    url("../fonts/Inter-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-BoldItalic.woff2') format('woff2'),
-       url('../fonts/Inter-BoldItalic.woff') format('woff');
+  font-family: "Inter";
+  src:
+    url("../fonts/Inter-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Inter-BoldItalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 body {
-    font-family: Inter;
-    font-size: 65px;
-    padding: 0;
-    margin: 0;
-    background-color: #0D0F1F;
+  font-family: Inter;
+  font-size: 65px;
+  padding: 0;
+  margin: 0;
+  background-color: #0d0f1f;
 }
 .header {
-    border: 1px solid black;
-    height: 100px;
-    background-color: #0D0F1F;
-    box-shadow: 0px 25px 100px 10px #137B70;
-
+  border: 1px solid black;
+  height: 100px;
+  background-color: #0d0f1f;
+  box-shadow: 0px 25px 100px 10px #137b70;
+  display: flex;
+  flex-direction: row;
+  gap: 300px;
+}
+.logo-section {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  padding-top: 12px;
+  padding-left: 49px;
+}
+.text-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 48px;
+  padding-left: 33px;
+  padding-top: 9px;
+}
+.text-style-logo {
+  color: #0df9e1;
+}
+.btn-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn-section-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 33px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+.btn-section-list-item {
+  text-decoration: none;
+}
+.btn-section-list-item-link-btn {
+  width: 140px;
+  height: 64px;
+  border-radius: 10px;
+  font-size: 22px;
+  color: white;
+  background-color: #171c42;
+  border: none;
+}
+.btn-section-list-item-link {
+  text-decoration: none;
+  border: none;
+}
+.btn-section-list-item-link-btn-lich {
+  width: 242px;
+  height: 64px;
+  border-radius: 10px;
+  font-size: 22px;
+  color: white;
+  background-color: #171c42;
+  border: none;
+}
+.btn-section-list-item-link-btn-sign {
+  width: 140px;
+  height: 64px;
+  border-radius: 10px;
+  font-size: 22px;
+  color: white;
+  background-color: #6c47ff;
+  border: none;
+}
+.btn-section-list-item-link-btn-cat {
+  width: 173px;
+  height: 64px;
+  border-radius: 10px;
+  font-size: 22px;
+  color: white;
+  background-color: #171c42;
+  border: none;
+}
+.btn-section-list-item-link-btn-sun {
+  width: 287px;
+  height: 64px;
+  border-radius: 10px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23.5px;
+  color: white;
+  background-color: #171c42;
+  border: none;
+}
+.btn-section-list-item-link-btn-sun-text {
+  text-decoration: none;
+}
+.btn-section-list-item-link-btn-sun-img {
+  margin-top: 3px;
+  margin-right: 20px;
+}
+.banner-section {
+  margin-top: 46px;
+}
+.banner-active {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+}
+.banner {
+  width: 1325px;
+  height: 440px;
+  border-radius: 45px;
+  background-color: #223c6f;
+  display: flex;
+  flex-direction: row;
+}
+.first-section-banner {
+  background-color: white;
+  width: 778px;
+  height: 440px;
+  border-radius: 45px 0px 0px 45px;
+  background-image: url("img/ResidentEvil.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second-section-banner {
+  height: 440px;
+}
+.text-banner {
+  font-size: 20px;
+  margin-top: 51px;
+  margin-left: 60px;
+  color: white;
+  font-weight: bold;
+}
+.new-game-text {
+  width: 150px;
+  height: 25.5px;
+  background-color: #15fb9f;
+  border-radius: 12px;
+  padding-left: 32px;
+  font-weight: bold;
+  color: black;
+}
+.banner-game-title {
+  font-size: 40px;
+  margin: 0px;
+  margin-top: 9px;
+}
+.description-game-banner {
+  font-size: 24px;
+  margin: 0px;
+  margin-top: 6px;
+}
+.price-game {
+  font-size: 24px;
+  margin-top: 95px;
+  margin-left: 5px;
+}
+.more-game {
+  margin-left: 110px;
+  margin-top: 72px;
+}
+.more-game-btn {
+  width: 212px;
+  height: 36px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #358483;
+  border: none;
+  font-weight: bold;
+  padding-right: 20px;
+  padding-top: 4px;
+}
+.back-item {
+  margin-top: 160px;
+}
+.next-item {
+  margin-top: 160px;
+}
+.banner-count {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  align-items: center;
+  margin-left: 783px;
+}
+.banner-count-list {
+  list-style-type: none;
+  display: flex;
+  gap: 23px;
+  height: 0px;
+}
+.banner-count-list-item {
+  height: 0px;
+}
+.banner-count-item {
+  width: 37px;
+  height: 29px;
+  background-color: #b8b6b6;
+  border-radius: 20px;
+}
+.active {
+  width: 75px;
+  height: 30px;
+  background-color: white;
 }
